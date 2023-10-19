@@ -4,7 +4,7 @@ ARG VARNISH_PROMETHEUS_EXPORTER_VSN=1.6.1
 
 RUN go install github.com/jonnenauha/prometheus_varnish_exporter@$VARNISH_PROMETHEUS_EXPORTER_VSN
 
-FROM varnish:7.2.1
+FROM varnish:7.3
 
 EXPOSE 9131
 VOLUME /var/lib/varnish
